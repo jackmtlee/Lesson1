@@ -14,4 +14,28 @@ public class DataType
         System.out.printf("b=%d, s=%d, i=%d, L=%d, f=%.2f, d=%.5f, c=%c, flag=%b%n",
                 b, s, i, L, f, d, c, flag);
     }
+
+
+
+
+
+//    void fn()
+//    {
+//        // Example 1
+//        // Invalid:
+//        // List<int> listOfInts;       // ❌ primitive not allowed
+//
+//        // Correct:
+//        List<Integer> listOfInts;     // ✅ uses wrapper
+//        Map<Character, Boolean> flags; // ✅ uses wrappers
+//
+//        // Example 2
+//        List<Integer> scores = new ArrayList<>();
+//        scores.add(42);        // autoboxes int → Integer
+//        Integer x = scores.get(0);
+//
+//
+//    }
+
+
 }
