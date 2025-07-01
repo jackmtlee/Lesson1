@@ -1,8 +1,10 @@
-package Lesson3;
+import java.awt.event.ComponentListener;
 
-public class Main
+
+class Test
 {
     final static int NUMBER = 1024;
+    final int number = 1;
     final String s = "java";
     final StringBuffer sb = new StringBuffer("java");
 
@@ -10,12 +12,5 @@ public class Main
     {
 //        s = s + "hello";       // error
         sb.append("hello");    // OK
-//        NUMBER ++;             // error
-    }
-
-
-    public static void main(String[] args)
-    {
-        new Main().fn();
     }
 }
