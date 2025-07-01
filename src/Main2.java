@@ -4,7 +4,7 @@ class Test2 {
     }
 }
 class Base2 {
-    static Test2 t1 = new Test2();
+    static SingletonTest t1 = new SingletonTest();
     public Base2() {
         System.out.println("base constructor");
     }
@@ -17,7 +17,7 @@ class Base2 {
     }
 }
 public class Main2 extends Base2 {
-    static Test2 t2 = new Test2();
+    static SingletonTest t2 = new SingletonTest();
     static int staticValue = getValue("get static value in Main");
     int nonstaticValue = getValue("get non static value in Main");
 
