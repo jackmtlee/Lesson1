@@ -66,6 +66,9 @@ class FullProfessor implements Faculty
 
 public class UniversityMain
 {
+    public static void main(String[] arags)
+    {
 
+    }
 
 }

@@ -4,8 +4,14 @@ import java.io.File;
 import java.io.IOException;
 
 public class FileTest {
-    public static void main(String[] args) {
-        File file = new File("example.txt");
+    public static void main(String[] args) throws IOException {
+//        File file = new File("example.txt");
+
+        // absolute path under Window OS
+        File file = new File("D:\\IntelliJ Idea Project\\your file.docx");
+
+        // for Linux, you must change the backslash to slash
+//        File file = new File("//IntelliJ Idea Project");
 
         if (file.exists()) {
             System.out.println("Name: " + file.getName());
@@ -14,10 +20,16 @@ public class FileTest {
         } else {
             System.out.println("File does not exist.");
         }
+
+//        fn();
+
+        fn1();
+
     }
 
     static void fn() throws IOException
     {
+        // relative path
         File file = new File("newfile.txt");
 
         if (file.createNewFile()) {
@@ -26,7 +38,7 @@ public class FileTest {
             System.out.println("File already exists.");
         }
 
-        file.delete(); // Deletes the file
+//        file.delete(); // Deletes the file
     }
 
     static void fn1()
