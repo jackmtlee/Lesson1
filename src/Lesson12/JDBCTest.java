@@ -68,7 +68,7 @@ public class JDBCTest
 
 
         // get connection
-        Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@192.168.1.19:1521:orcl", "TOM", "jackmtlee");
+        Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@192.168.1.19:1521:orcl", "TOM", "XXX");
         //get statement object
         String sql_statement = "select * from T_STUDENT";
         PreparedStatement pstm = connection.prepareStatement(sql_statement);
