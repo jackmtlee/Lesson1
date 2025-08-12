@@ -62,7 +62,7 @@ public class JDBCTest
     static void javaConnectOracle() throws Exception
     {
         // load Oracle driver
-        Class.forName("oracle.jdbc.OracleDriver");
+        Class.forName("oracle.jdbc.driver.OracleDriver");
 //
 //        System.out.println("Connecting to database...");
 
@@ -84,7 +84,7 @@ public class JDBCTest
 
         // result output
         while(rs.next()){
-                System.out.println("student id : " + rs.getString(0) + ", student name is : " + rs.getString("S_NAME"));
+                System.out.println("student id : " + rs.getString("S_ID") + ", student name is : " + rs.getString("S_NAME") + ", age is " + rs.getString("S_AGE"));
         }
         // release the resource
         rs.close();
